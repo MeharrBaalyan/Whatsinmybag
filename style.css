@@ -1,0 +1,53 @@
+body {
+    
+  background-image: url("conveyer\ .webp");
+  background-size: cover;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.box a {
+  color: white;
+}
+
+.green { color: lime; }
+.yellow { color: yellow; }
+.red { color: red; }
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.box {
+  animation: slidein 4s ease;
+  background-color: #b0a898;
+  border: 3px solid #888;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+}
